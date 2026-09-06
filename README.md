@@ -23,3 +23,4 @@ This repository documents my progression through a structured AI Engineering lea
 03-langchain/         LangChain models, tools, agents, and memory
 projects/             Larger projects built from learned concepts
 notes/                Selected technical notes and observations
+```
