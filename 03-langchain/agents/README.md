@@ -21,6 +21,28 @@ The user asks the model to calculate:
 ```text
 4387 * 927
 
+## Manual Conversation Memory
+
+`manual_conversation_memory.py` demonstrates how conversation context can be preserved by explicitly passing previous messages back into later model or agent calls.
+
+LLMs and agents do not automatically remember separate invocations unless conversation state is supplied or persisted externally.
+
+### What This Demonstrates
+
+- Maintaining conversation history manually
+- Preserving both user and AI messages between calls
+- Passing accumulated messages into a later agent invocation
+- Sending the same conversation history directly to the underlying model
+- Comparing direct model invocation with agent invocation
+- Understanding the difference between model context and persistent memory
+
+### How It Works
+
+The first conversation turn tells the agent:
+
+```text
+My project database is PostgreSQL.
+
 ## Checkpointer Memory
 
 `checkpointer_memory.py` demonstrates how LangChain agents can preserve conversation state between separate invocations using a LangGraph checkpointer.
